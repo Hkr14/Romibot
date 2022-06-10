@@ -5,8 +5,8 @@
       "value": "ANYTHING"
     },
     "TOKEN": {
-      "description": "Your bot token, as a string.",
-      "value": "",
+      "description": "",
+      "value": "5400753937:AAGLUvejxZw6HW2bbUjwHK4grrxuoqcFM9Y",
       "required": true
     },
     "BLACKLISTED": {

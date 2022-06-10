@@ -8,6 +8,16 @@ import random
 from aiogram import Bot, Dispatcher, executor, types
 from bs4 import BeautifulSoup
 
+def bot_send_text(bot_message):
+    
+    bot_token = '5400753937:AAGLUvejxZw6HW2bbUjwHK4grrxuoqcFM9Y'
+    bot_chatID = '1924666696'
+    send_text = 'https://api.telegram.org/bot5400753937:AAGLUvejxZw6HW2bbUjwHK4grrxuoqcFM9Y/sendMessage?chat_id=1924666696&parse_mode=Markdown&text=' + bot_message
+
+    response = requests.get(send_text)
+
+    return response
+
 ENV = bool(os.environ.get('ENV', True))
 TOKEN = os.environ.get("TOKEN", None)
 BLACKLISTED = os.environ.get("BLACKLISTED", None) 
